@@ -1,0 +1,391 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Components</title>
+<link href="../../css/ea.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="../../js/displayToc.js" type="text/javascript"></script>
+<script>
+
+  function switchProjectProperties() {
+			if (document.getElementById("proj00").style.display == "none") {
+				document.getElementById("proj00").style.display = "revert";
+				document.getElementById("proj01").style.display = "revert";
+				document.getElementById("proj02").style.display = "revert";
+				document.getElementById("proj03").style.display = "revert";
+				document.getElementById("proj04").style.display = "revert";
+				document.getElementById("proj05").style.display = "revert";
+			} else {
+				document.getElementById("proj00").style.display = "none";
+				document.getElementById("proj01").style.display = "none";
+				document.getElementById("proj02").style.display = "none";
+				document.getElementById("proj03").style.display = "none";
+				document.getElementById("proj04").style.display = "none";
+				document.getElementById("proj05").style.display = "none";
+			}
+}
+
+		function switchAdvancedProperties(){
+
+			if (document.getElementById("adv00").style.display == "none") {;
+				document.getElementById("adv00").style.display = "revert";
+				document.getElementById("adv01").style.display = "revert";
+			} else {
+				document.getElementById("adv00").style.display = "none";
+				document.getElementById("adv01").style.display = "none";
+			}
+		}
+		function initPage()
+        {			
+			var divs = document.getElementsByClassName("ObjectDetailsNotes");
+			for (var j = 0; j < divs.length; j++) {
+				var tmpStr = divs[j].innerHTML;
+				tmpStr = tmpStr.replace(/#gt;/g, "&gt;");
+				tmpStr = tmpStr.replace(/#lt;/g, "&lt;");
+
+				tmpStr = tmpStr.replace(/&gt;/g, ">");
+				tmpStr = tmpStr.replace(/&lt;/g, "<");
+
+				divs[j].innerHTML = tmpStr;
+			}
+
+            if (document.getElementById('TableGroup') != null)
+            {
+                toggleItem(document.getElementById('TableGroup').getElementsByTagName('li')[0].id.replace("Title", ""));
+            }
+
+        }
+</script>
+<style>
+
+</style>
+</head>
+<body onload="initPage();">
+<div class="section group" >
+
+		<div class="col span_2_of_2 header_frame">
+			<h1> Components </h1>
+			<!-- <img class="header_image" src="../../images/ea-banner.png" align="right" alt="Header Image" />-->
+			<img class="header_image" src="../../images/ea-banner.png" align="right" alt="Header Image" />
+		</div>
+		<div class="col span_2_of_2 breadcrumb_frame">
+			<p><a href="../../index.htm">Model</a> / <a href="EA242.htm">SGAM Component Layer</a> / <a href="./EA1/EA252.htm">Components</a></p>
+		</div>
+			
+		<table class="contentmaintable">
+			<!-- <tfoot>
+				<tr>
+					<td>foot1</td>
+					<td>foot2</td>
+				</tr>
+			</tfoot> -->
+			<tbody>
+				<tr>
+					<td class="indexcell">
+						<div class="projectBrowserTitle">Project: </div>
+						<ul>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA253.htm">:Weather Service Provider</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA294.htm">:Weather Service Provider</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA254.htm">Biomass</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA295.htm">Biomass</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA255.htm">C3PO</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA296.htm">C3PO</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA256.htm">C3PO (T3.3)</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA297.htm">C3PO (T3.3)</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA257.htm">C3PO Cascading simulators, operational network planning modules</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA298.htm">C3PO Cascading simulators, operational network planning modules</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA299.htm">C3PO Cyber Risk Assessment Tool </a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA300.htm">C3PO Cyber Risk Assessment Tool </a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA301.htm">C3PO Cyber Risk Assessment Tool </a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA302.htm">C3PO Cyber Threat Intelligence</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA303.htm">C3PO Cyber Threat Intelligence</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA304.htm">C3PO Cyber Threat Intelligence</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA305.htm">C3PO Cyber Threat Intelligence</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA306.htm">C3PO Cyber Threat Intelligence</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA307.htm">C3PO Dynamic Cyber Risk Evaluation</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA308.htm">C3PO Dynamic Cyber Risk Evaluation</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA258.htm">C3PO/ Post-Disruption Distribution System Operation and Restoration Module</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA309.htm">C3PO/ Post-Disruption Distribution System Operation and Restoration Module</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA259.htm">Client1</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA310.htm">Client1</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA311.htm">Conference call device</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA312.htm">Cyber security tools</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA313.htm">DER gateway</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA314.htm">DER SCADA</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA315.htm">DER Smart Meter</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA260.htm">DER Smart Meter</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA261.htm">DER Smart Meter</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA316.htm">DER Smart Meter</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA317.htm">DER Smart Meter</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA262.htm">DER1</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA318.htm">DER1</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA263.htm">DERs</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA264.htm">DERs</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA319.htm">DERs</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA320.htm">DLR server</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA265.htm">DSO</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA321.htm">DSO</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA322.htm">DSO EMS</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA266.htm">DSO SCADA</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA267.htm">DSO SCADA</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA268.htm">DSO SCADA</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA323.htm">DSO SCADA</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA324.htm">DSO SCADA</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA325.htm">DSO SCADA</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA326.htm">Emergency and Restoration - System Split Module</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA328.htm">EMMA-ARGOS</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA329.htm">EMMA-Communication tool</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA330.htm">EMMA-Communication tool client</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA331.htm">EMMA-DLR</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA332.htm">EMMA-DYML</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA333.htm">EMMA-GIMAN</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA334.htm">EMMA-GIMAN MOBILE APP</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA335.htm">EMMA-Incident manager</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA336.htm">EMMA-Op tool</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA337.htm">EMMA-PQEL</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA338.htm">EMMA-RA cost sharing software</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA339.htm">EMMA-surveillance</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA340.htm">EMMA-TSC</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA341.htm">EMMA-TTA</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA269.htm">EMMA GIMAN mobile app</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA327.htm">EMMA GIMAN mobile app</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA270.htm">Energy service company</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA342.htm">Energy service company</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA271.htm">EVs</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA343.htm">External Cyber Threat Intelligence Sources</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA344.htm">External Cyber Threat Intelligence Sources</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA345.htm">External Cyber Threat Intelligence Sources</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA272.htm">Faulty distribution circuits</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA346.htm">Field NW</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA347.htm">fields switch</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA273.htm">Fire Station</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA348.htm">Fire Station</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA349.htm">Flexibility system</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA350.htm">Gas chromatograph</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA351.htm">Grid model server</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA274.htm">HomeAutomation1</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA352.htm">HomeAutomation1</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA353.htm">HomeAutomation1</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA275.htm">HV</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA354.htm">HV</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA355.htm">HV/MV</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA276.htm">HV/MV</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA277.htm">HV/MV</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA356.htm">HV/MV</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA357.htm">HV/MV</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA278.htm">ICTGateway1</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA358.htm">ICTGateway1</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA359.htm">IGM server</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA360.htm">IGM Tool</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA361.htm">Internet</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA362.htm">IRIS Communication platform </a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA363.htm">IRIS OPP (Optimal PMU Placement) Application</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA364.htm">IRIS Remedial Action Tool</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA365.htm">KSI signer (RSC)</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA366.htm">KSI signer (TSO)</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA279.htm">Loads</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA367.htm">Local repository (RSC)</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA368.htm">Local repository (TSO)</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA369.htm">LV</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA370.htm">Merging tool</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA280.htm">MGCC</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA281.htm">Microgrid Formation</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA371.htm">Microgrid Formation</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA372.htm">MISP</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA373.htm">MITRE</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA282.htm">Mobile Source Dispatch Central Controller</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA283.htm">Mobile Source Stations</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA284.htm">Mobile Sources</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA285.htm">Multi Energy Microgrid</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA286.htm">MV</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA374.htm">MV</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA375.htm">Network modeller</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA376.htm">Op server</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA377.htm">operation-level asset</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA378.htm">Pilot Site</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA379.htm">Pilot Site</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA380.htm">PMU</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA381.htm">PMU</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA382.htm">Power flow software</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA383.htm">Power flow software</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA384.htm">Power Flow Tool</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA385.htm">Power quality server</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA386.htm">PRECOG</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA387.htm">PRECOG</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA388.htm">PRECOG</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA389.htm">PRECOG</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA390.htm">PRECOG</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA391.htm">PRECOG Cybersecurity Events Management tool (SIEM)</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA392.htm">PRECOG Cybersecurity Events Management tool (SIEM)</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA393.htm">PRECOG Deep Learning Data Analytics</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA394.htm">PRECOG Deep Learning Data Analytics</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA395.htm">PRECOG Deep Learning Data Analytics</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA396.htm">PRECOG Deep Learning Data Analytics</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA397.htm">PRECOG Sandbox Tool</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA398.htm">PRECOG Sandbox Tool</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA399.htm">Precog UI</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA400.htm">PV plant</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA287.htm">PVs</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA401.htm">PVs</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA402.htm">RSC firewall</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA403.htm">RSC NW</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA404.htm">RTU</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA288.htm">RTU</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA405.htm">RTU</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA406.htm">RTU</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA407.htm">S2 toolkit</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA408.htm">S2 toolkit station</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA409.htm">SCADA</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA410.htm">SCADA</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA289.htm">SCADA - DMS</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA411.htm">SCADA - DMS</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA412.htm">SCADA/EMS</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA413.htm">SCADA/EMS</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA414.htm">Security enforcer application</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA415.htm">Server</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA416.htm">shared repository</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA417.htm">Solar</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA418.htm">Staging environment</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA419.htm">Staging environment</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA422.htm">Station-level asset</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA420.htm">Station NW</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA421.htm">station switch</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA423.htm">Surveillance camera</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA424.htm">T3.2 C3PO “Dynamic Cyber Risk Evaluation Tool”</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA425.htm">T3.2 C3PO “Dynamic Cyber Risk Evaluation Tool”</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA426.htm">T3.2 C3PO “Dynamic Cyber Risk Evaluation Tool”</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA427.htm">Task 3.1 partners (CYBER, ICCS etc.)</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA428.htm">Task 3.1 partners (CYBER, ICCS etc.)</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA429.htm">Transformers</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA290.htm">TSO</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA430.htm">TSO</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA431.htm">TSO</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA432.htm">TSO NW</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA433.htm">TSO operator PC</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA434.htm">TSO operator PC</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA291.htm">TSO SCADA</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA435.htm">TSO SCADA</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA436.htm">TSO switch</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA437.htm">TSO/RSC firewall</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA438.htm">UAV</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA439.htm">Vulnerability Assessment Tool</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA440.htm">Vulnerability Assessment Tool</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA292.htm">Weather Service Provider</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA441.htm">Weather Service Provider</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA442.htm">Wind</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA293.htm">Workforce</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA443.htm">Workforce</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA444.htm">Conference call device</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA445.htm">DERs</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA446.htm">Device1</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA447.htm">DSO</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA448.htm">DSO Distributed Generation Database</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA449.htm">DSO operator</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA450.htm">Emergency and Restoration - System Split Module</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA451.htm">Flexibility system</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA452.htm">Forecasting tool</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA453.htm">GeneralSGAMComponent1</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA454.htm">IRIS - OFPM</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA455.htm">IRIS Communication platform </a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA456.htm">IRIS OPP (Optimal PMU Placement) Application</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA457.htm">IRIS Remedial Action Tool</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA458.htm">Measurement data center</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA459.htm">MV Network</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA460.htm">PMU</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA461.htm">PMU</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA462.htm">Power flow software</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA463.htm">Power Flow Tool</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA464.htm">Protection devices</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA465.htm">RTU</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA466.htm">RTU</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA467.htm">RTUs</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA468.htm">SCADA</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA469.htm">SCADA/ADMS</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA470.htm">SCADA/EMS</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA471.htm">SCADA/EMS</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA472.htm">SCADA/EMS</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA473.htm">Server</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA474.htm">SmartMeter</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA475.htm">SmartMeters</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA476.htm">TSO</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA477.htm">TSO</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA478.htm">TSO - DSO Communication Platform</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA479.htm">TSO Operator</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA480.htm">TSO operator PC</a></li>
+<li><img src="../../images/9.png" alt="Node"/> <a href="./EA1/EA481.htm">TSO operator PC</a></li>
+</ul>
+
+					</td>
+					<td class="contentcell"><div class="pageHeader"></div>
+<div class="PageBody">
+	<span class="ObjectTitle">Components  : Public   Package</span>
+	<table border="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">03/10/2013 10:20:16</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">02/09/2015 12:58:44</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><button onclick="switchProjectProperties()"><img src="../../images/plus03.gif" align="absmiddle" id="proj" /></button>Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">lpons</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue">Development</td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj06" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Priority:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" >Multiplicity:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><button onclick="switchAdvancedProperties()"><img src="../../images/plus03.gif" align="absmiddle" id="adv" /></button>Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{A805C496-DC8D-406f-84A0-F669383EAEE8}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="EA240.htm">Component Layer Overview</a></td>
+		</tr>
+	</table>
+	
+ </div>
+ </td>
+				</tr>
+			</tbody>
+		</table>
+		
+</div>
+</body>
+</html>
+
